@@ -4,8 +4,8 @@
     "description": "Portal de Projetos e RPG",
     "socials": [
       { "name": "GitHub", "url": "https://github.com/DuqueIguro" },
-      { "name": "Twitter/X", "url": "#" },
-      { "name": "Discord", "url": "#" }
+      { "name": "Twitter/X", "url": "https://x.com/DuqueIguro" },
+      { "name": "Instagram", "url": "https://www.instagram.com/duque_iguro/" }
     ]
   },
   "projects": [
@@ -18,7 +18,7 @@
     },
     {
       "id": "bleach",
-      "title": "Bleach Project",
+      "title": "Bleach RPG",
       "description": "Uma nova experiência imersiva no mundo de Bleach. Prepare sua Zanpakutou.",
       "url": "https://bleach.duqueiguro.xyz",
       "status": "Em Desenvolvimento"
