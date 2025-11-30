@@ -1,0 +1,152 @@
+:root {
+    --bg-color: #050505;
+    --text-color: #ffffff;
+    --accent-dark: #004d00; /* Verde Escuro */
+    --accent-light: #008000; /* Verde um pouco mais claro para hover */
+    --card-bg: rgba(20, 20, 20, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Estrelas no fundo */
+#stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
+
+/* Container Principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 2rem;
+    z-index: 1;
+}
+
+/* Header */
+.profile-header {
+    margin-bottom: 3rem;
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--accent-dark);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid var(--accent-dark);
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background-color: var(--accent-dark);
+    color: white;
+    border-color: var(--accent-light);
+}
+
+/* Grid de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--accent-dark);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--accent-dark);
+    border-color: var(--accent-light);
+}
+
+.card h2 {
+    color: var(--accent-light);
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.status-tag {
+    font-size: 0.8rem;
+    background: #002200;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
