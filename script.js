@@ -6,27 +6,41 @@ document.addEventListener('DOMContentLoaded', () => {
 // Função para criar efeito de estrelas no fundo
 function createStars() {
     const starsContainer = document.getElementById('stars-container');
-    const starCount = 100; // Quantidade de estrelas
+    const starCount = 150; // Aumentei um pouco para ficar mais bonito
 
     for (let i = 0; i < starCount; i++) {
         const star = document.createElement('div');
         star.classList.add('star');
         
-        // Posição aleatória
+        // 1. Posição Inicial Aleatória
         const x = Math.random() * 100;
         const y = Math.random() * 100;
         
-        // Tamanho aleatório
-        const size = Math.random() * 2 + 1; // entre 1px e 3px
-        
-        // Duração da animação aleatória
-        const duration = Math.random() * 3 + 2; // entre 2s e 5s
+        // 2. Tamanho Aleatório
+        const size = Math.random() * 2 + 1; 
 
+        // 3. Definindo o movimento aleatório (Drift)
+        // Cada estrela vai se mover entre -100px e +100px para os lados/cima/baixo
+        const moveX = (Math.random() * 200) - 100; 
+        const moveY = (Math.random() * 200) - 100; 
+
+        // 4. Durações Aleatórias
+        // Piscar: entre 2s e 5s
+        const twinkleDuration = Math.random() * 3 + 2; 
+        // Mover: entre 10s e 20s (movimento lento e suave)
+        const floatDuration = Math.random() * 10 + 10;
+
+        // Aplicando os estilos e variáveis CSS
         star.style.left = `${x}%`;
         star.style.top = `${y}%`;
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
-        star.style.animationDuration = `${duration}s`;
+        
+        // Passando as variáveis para o CSS ler
+        star.style.setProperty('--twinkle-duration', `${twinkleDuration}s`);
+        star.style.setProperty('--float-duration', `${floatDuration}s`);
+        star.style.setProperty('--move-x', `${moveX}px`);
+        star.style.setProperty('--move-y', `${moveY}px`);
 
         starsContainer.appendChild(star);
     }
