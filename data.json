@@ -14,14 +14,14 @@
       "title": "Star Wars RPG",
       "description": "Sistema de RPG completo baseado no universo Star Wars. Acesse regras, fichas e lore.",
       "url": "https://starwars.duqueiguro.xyz",
-      "status": "Ativo"
+      "status": "Inativo"
     },
     {
       "id": "bleach",
       "title": "Bleach RPG",
       "description": "Uma nova experiência imersiva no mundo de Bleach. Prepare sua Zanpakutou.",
       "url": "https://bleach.duqueiguro.xyz",
-      "status": "Em Desenvolvimento"
+      "status": "Ativo"
     }
   ]
 }
