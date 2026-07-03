@@ -3,10 +3,8 @@
     "name": "Duque Iguro",
     "description": "Portal de Projetos e RPG",
     "socials": [
-      { "name": "GitHub", "url": "https://github.com/DuqueIguro" },
-      { "name": "Twitter/X", "url": "https://x.com/DuqueIguro" },
-      { "name": "Instagram", "url": "https://www.instagram.com/duque_iguro/" },
-      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/duqueiguro/" }
+      { "name": "Todas as minhas redes", "url": "https://guns.lol/DuqueIguro" },
+      { "name": "GitHub", "url": "https://github.com/DuqueIguro" }
     ]
   },
   "projects": [
@@ -15,14 +13,14 @@
       "title": "Star Wars RPG",
       "description": "Sistema de RPG completo baseado no universo Star Wars. Acesse regras, fichas e lore.",
       "url": "https://starwars.duqueiguro.xyz",
-      "status": "Inativo"
+      "status": "Ativo"
     },
     {
       "id": "bleach",
       "title": "Bleach RPG",
       "description": "Uma nova experiência imersiva no mundo de Bleach. Prepare sua Zanpakutou.",
       "url": "https://bleach.duqueiguro.xyz",
-      "status": "Ativo"
+      "status": "Hiato"
     }
   ]
 }
