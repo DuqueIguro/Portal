@@ -1,0 +1,47 @@
+{
+  "profile": {
+    "name": "Duque Iguro",
+    "description": "Portal de Projetos e RPG",
+    "socials": [
+      { "name": "Todas as minhas redes", "url": "https://guns.lol/DuqueIguro" },
+      { "name": "GitHub", "url": "https://github.com/DuqueIguro" }
+    ]
+  },
+  "projects": [
+    {
+      "id": "joiadomedo",
+      "title": "Joia Do Medo",
+      "description": "Um RPG de suspense e mistério com foco em narrativa e investigação. Explore o desconhecido e enfrente seus medos.",
+      "url": "https://joiadomedo.com.br",
+      "status": "Ativo"
+    },
+    {
+      "id": "starwars",
+      "title": "Star Wars RPG",
+      "description": "Sistema de RPG completo baseado no universo Star Wars. Acesse regras, fichas e lore.",
+      "url": "https://starwars.duqueiguro.xyz",
+      "status": "Ativo"
+    },
+    {
+      "id": "bleach",
+      "title": "Bleach RPG",
+      "description": "Uma nova experiência imersiva no mundo de Bleach. Prepare sua Zanpakutou.",
+      "url": "https://bleach.duqueiguro.xyz",
+      "status": "Hiato"
+    },
+    {
+      "id": "Academia De Magia RPG",
+      "title": "Academia De Magia RPG",
+      "description": "Um sistema de RPG de magia e aventura. Desenvolva suas habilidades mágicas e embarque em jornadas épicas.",
+      "url": "https://magia.duqueiguro.xyz",
+      "status": "Em desenvolvimento"
+    },
+    {
+      "id": "vip",
+      "title": "Área VIP",
+      "description": "Área exclusiva para Transações VIP(+18), conteúdos especiais e benefícios adicionais.",
+      "url": "https://vip.duqueiguro.xyz",
+      "status": "Ativo"
+    }
+  ]
+}
